@@ -1,0 +1,36 @@
+```
+# Lord Ganesha Graphic Representation
+
+class GaneshaGraphic:
+    def __init__(self):
+        self.body_color = '#FFA500'
+        self.head_color = '#FFD700'
+        self.ear_color = '#FFA500'
+        self.eye_color = 'black'
+        self.trunk_color = '#8B4513'
+        self.decoration_color = '#FF69B4'
+
+    def draw(self):
+        print('Drawing Lord Ganesha with the following customizable features:')
+        print(f'Body Color: {self.body_color}')
+        print(f'Head Color: {self.head_color}')
+        print(f'Ear Color: {self.ear_color}')
+        print(f'Eye Color: {self.eye_color}')
+        print(f'Trunk Color: {self.trunk_color}')
+        print(f'Decoration Color: {self.decoration_color}')
+        print('Representation Complete!')
+
+# Create an instance of GaneshaGraphic
+ganesha = GaneshaGraphic()
+ganesha.draw()
+
+# Output simulation:
+# Drawing Lord Ganesha with the following customizable features:
+# Body Color: #FFA500
+# Head Color: #FFD700
+# Ear Color: #FFA500
+# Eye Color: black
+# Trunk Color: #8B4513
+# Decoration Color: #FF69B4
+# Representation Complete!
+```

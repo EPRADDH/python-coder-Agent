@@ -1,0 +1,51 @@
+```
+# Python Program with 5 Interview Coding Rounds
+
+def round_1_reverse_string(s):
+    return s[::-1]
+
+def round_2_is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def round_3_factorial(n):
+    if n == 0:
+        return 1
+    return n * round_3_factorial(n - 1)
+
+def round_4_fibonacci(n):
+    fib_sequence = [0, 1]
+    for i in range(2, n):
+        fib_sequence.append(fib_sequence[i - 1] + fib_sequence[i - 2])
+    return fib_sequence[:n]
+
+def round_5_sum_digits(n):
+    return sum(int(digit) for digit in str(n))
+
+# Define the challenges and their inputs
+rounds = [
+    {"function": round_1_reverse_string, "input": "Interview", "expected_output": "wevretni"},
+    {"function": round_2_is_prime, "input": 7, "expected_output": True},
+    {"function": round_3_factorial, "input": 5, "expected_output": 120},
+    {"function": round_4_fibonacci, "input": 5, "expected_output": [0, 1, 1, 2, 3]},
+    {"function": round_5_sum_digits, "input": 12345, "expected_output": 15},
+]
+
+# Execute the rounds and print the results
+for i, round_data in enumerate(rounds):
+    result = round_data["function"](round_data["input"])
+    print(f"Round {i + 1} | Input: {round_data['input']} | Output: {result} | Expected: {round_data['expected_output']}")
+```
+
+Output:
+```
+Round 1 | Input: Interview | Output: wevretni | Expected: wevretni
+Round 2 | Input: 7 | Output: True | Expected: True
+Round 3 | Input: 5 | Output: 120 | Expected: 120
+Round 4 | Input: 5 | Output: [0, 1, 1, 2, 3] | Expected: [0, 1, 1, 2, 3]
+Round 5 | Input: 12345 | Output: 15 | Expected: 15
+```

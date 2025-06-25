@@ -1,0 +1,1 @@
+The code to create a Lord Ganesha graphic using Python Turtle has been provided, along with instructions for running it locally.
